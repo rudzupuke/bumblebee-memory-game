@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #ffd951;
+}
+
+.hex-flex-container {
+  display: flex;
+  margin-top: 150px;
+}
+
+.col-1 {
+  margin-top: 68px;
+  margin-left: -34px;
+}
+
+.col-2 {
+  margin-left: -34px;
+}
+
+.col-3 {
+  margin-top: -68px;
+  margin-left: -34px;
+}
+
+.hex {
+  width: 156px;
+  height: 130px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.back-card {
+  background-color: #d87c06;
+}
+
+.back-card:hover {
+  background-color: #c35e02;
+}
+
+.bumblebee-2 {
+  background-image: url(images/bumblebee-2.jpg);
+  background-size: 100%;
+}
+
+.bumblebee-3 {
+  background-image: url(images/bumblebee-3.jpg);
+  background-size: 100%;
+}
+
+.bumblebee-4 {
+  background-image: url(images/bumblebee-4.jpg);
+  background-size: 100%;
+}
+
+.bumblebee-5 {
+  background-image: url(images/bumblebee-5.jpg);
+  background-size: 100%;
+}
+
+.bumblebee-6 {
+  background-image: url(images/bumblebee-6.jpg);
+  background-size: 100%;
+}
+
+.bumblebee-7 {
+  background-image: url(images/bumblebee-7.jpg);
+  background-size: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  color: #773a00;
+  font-size: 0.9rem;
+}
+
+.new-game {
+  background-color: #c35e02;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  border-radius: 9px;
+}
+
+.new-game:hover {
+  background-color: #d87c06;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .scores {
+    font-size: 0.7rem;
+    gap: 1em;
+  }
+
+  .hex {
+    width: 100px;
+    height: 86px;
+  }
+
+  .col-1 {
+    margin-top: 45px;
+    margin-left: -22px;
+  }
+
+  .col-2 {
+    margin-left: -22px;
+  }
+
+  .col-3 {
+    margin-top: -45px;
+    margin-left: -22px;
+  }
+}
